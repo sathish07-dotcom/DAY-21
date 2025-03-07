@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>datatypes</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <div class="container">
+        <h1>datatypes - in- javascript</h1>
+        <h4>In JavaScript, there are several data types that are used to store different kinds of data. <br>These can be divided into
+             **primitive types** and **non-primitive (or reference) types**.</h4>
+<div class="type">
+<h2>Primitive Data Types:</h2>
+<li>
+     **Number**: Represents both integer and floating-point numbers.
+    <p>Example: `let age = 25;` or `let price = 19.99;`</p>
+</li>
+
+   
+<li>
+    **String**: Represents a sequence of characters enclosed in single, double, or backticks (for template literals).
+    <p>Example: `let name = "John";` or `let greeting = `Hello, ${name}`;`</p>
+</li>
+   
+<li>
+    **Boolean**: Represents a value that is either `true` or `false`.
+    <p> Example: `let isActive = true;`</p>
+</li>
+   
+<li>
+    **Undefined**: A variable that has been declared but not yet assigned a value.
+    <p>Example: `let x; // x is undefined`</p>
+</li>
+   
+<li>
+    **Null**: Represents the intentional absence of any object value.
+    <p>Example: `let person = null;`</p>
+</li> 
+   
+<li>
+    **Symbol** (ES6): Represents a unique and immutable value, often used as object keys to avoid name clashes.
+    <p>Example: `let uniqueSymbol = Symbol("id");`</p>
+</li> 
+   
+<li>
+    **BigInt** (ES11): Represents integers with arbitrary precision.
+    <p>Example: `let bigNumber = 1234567890123456789012345678901234567890n;`</p>
+</li>
+</div>
+<div class="type">
+<h2>Non-Primitive (Reference) Data Types:</h2>
+<li>
+    **Object**: A collection of key-value pairs, where the keys are strings and the values can be any data type.
+    <p>Example: `let person = { name: "John", age: 25 };`</p>
+</li>
+   <li>
+    **Array**: A special type of object used for storing ordered collections of values.
+    <p>Example: `let numbers = [1, 2, 3, 4];`</p>
+   </li> 
+   
+<li>
+    **Function**: A block of code that can be called and executed. In JavaScript, functions are also objects.
+    <p>Example: 
+      function greet(name) {
+        return `Hello, ${name}!`;
+      }
+      </p>
+</li>
+    </div>
+
+
+    </div>
+    <script>
+        //IN JA PRIMATIVE,NON-PRIMATIVE
+        //IN PRIMATIVE,NUMBERS(INTEGRS,FLOAT),STRINGS(METHODES),UNDEFINED,NULL,BOLLENS.....
+
+
+        //NUMBER
+        let number = 20;
+        console.log(number);
+        console.log(typeof (number));
+        let number1 = 55.5;
+        console.log(number1);
+        console.log(typeof (number1));
+        let num = -20;
+        console.log(num);
+        console.log(typeof (num));
+
+        //STRINGS 
+        let name = 'SAGAR';
+        console.log(name);
+        let fullName = 'EJJAGIRI SATHSIH UASC'
+        console.log(fullName);
+
+        //STRING METHODES
+
+        //1.LENGHT
+        let pet = 'Tiger';
+        console.log(pet);
+        console.log(pet.length);
+
+        //2.ACCESSING CHARACTERS
+        let pet1 = 'Java script';
+        console.log(pet1);
+        console.log(pet1.length);
+        console.log(pet1[0]);
+        console.log(pet1[5]);
+        console.log(pet1[9]);
+        console.log(pet1[4]);
+
+        //3.TO UPPER CASE & LOWER CASE
+        let str = 'rAhuL ejJagIRi';
+        console.log(str);
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+
+        //4.CONCAT
+        let firstName = 'sagar';
+        let lastName = 'ejjagiri';
+        let full_Name = (firstName.concat(lastName));
+        console.log(full_Name);
+        console.log(full_Name.length);
+
+        //5.INDEX OF() & LAST INDEX OF()
+        let text = 'Hello world! Good morning';
+        console.log(text);
+        console.log(text.indexOf('morning'));
+        console.log(text.lastIndexOf('Good'));
+
+        //6.SUBSTRING() & SLICE ()
+        let text1 = "javascript";
+        console.log(text1);
+        console.log(text1.substring(2, 8));
+        console.log(text1.slice(-6, -1));
+
+        //7.REPLACE()
+        let word = 'Good morning All';
+        console.log(word);
+        console.log(word.replace("G", "B"));
+
+
+        //8.TRIM()
+        let word1 = "     am sathish ejjagiri        ";
+        console.log(word1);
+        console.log(word1.trim());
+
+        //9.SPLIT()
+        let box = 'apple,banana,mango,carrot,greeps';
+        console.log(box);
+        let fruits = box.split(',');
+        console.log(fruits);
+
+        //10.CHARAT()
+        let box2 = 'javascript';
+        console.log(box2);
+        console.log(box2.charAt(1));
+
+        //11.TEmplate Literals
+        let obj = {
+            item: 'pen',
+            price: 20,
+        };
+
+        let str1 = "";
+        console.log(str1.length);
+
+        let str2 = " ";
+        console.log(str2.length);
+
+        // console.log('The Cost of',obj.item,'is',obj.price,'rupess');
+        console.log(`The cost of ${obj.item} is ${obj.price} rupess`);
+
+        //BOOLEANS
+
+        //1.TRUE
+        let isStudent = true;
+        console.log(isStudent);
+        console.log(10 >= 20);
+
+        //2.FALSE
+        console.log(10 <= 50);
+        let is_Student = false;
+        console.log(is_Student);
+
+
+
+        //UNDEFINED
+        let container;
+        console.log(container);
+
+        //NULL
+        let book = null;
+        console.log(book);
+
+
+
+        //IN NON-PRIMATIVE ARRAYS,OBJECTS,functions
+
+        //arrays
+        let f = ['apple', 'mangos', 'cherry', 'grapes'];
+        console.log(f);
+        console.log(typeof (f));
+        console.log(f[3]);
+
+        //objects
+        const info = {
+            name: 'sagar',
+            age: 15,
+            course: 'MCA',
+            collegeName: 'UASC Hmdk'
+        }
+        console.log(info);
+        console.log(typeof (info));
+        info.name = 'sathish';
+        info.age = 25;
+        console.log(info);
+
+        //functions
+        function add() {
+            console.log(20 + 10);
+            console.log(20 - 10);
+            console.log(20 * 10);
+            console.log(20 / 10);
+            console.log(20 ** 2);
+            console.log('function1');
+        }
+        add();
+
+        // ADD @ before the user name,add add length of username end of username
+
+        let userName = prompt("Enter your's Full Name");
+        console.log('User Name=', userName);
+        let ad = '@';
+        console.log(ad + userName);
+        let length = userName.length
+        console.log('Length=', length);
+        console.log('Full Name=', `${ad}${userName}${length}`);
+    </script>
+</body>
+</html>

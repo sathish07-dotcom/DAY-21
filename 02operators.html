@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>operators</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>operators in javascript</h1>
+    <h4>In JavaScript, **operators** are used to perform operations on variables and values.</h4>
+    <h4>They can be categorized into several types:</h4>
+<div class="type">
+<h2>1. Arithmetic Operators</h2>
+<h4>These operators are used to perform mathematical calculations.</h4>
+
+<li>`+` (Addition): Adds two operands.
+  <p>Example: `let sum = 5 + 3; // 8`</p>
+  </li>
+<li> `-` (Subtraction): Subtracts the right operand from the left operand.
+  <p> Example: `let difference = 5 - 3; // 2`</p>
+  </li>
+<li> `*` (Multiplication): Multiplies two operands.
+  <p>Example: `let product = 5 * 3; // 15`</p>
+  </li>
+<li> `/` (Division): Divides the left operand by the right operand.
+  <p> Example: `let quotient = 5 / 3; // 1.666`</p>
+  </li>
+<li> `%` (Modulus): Returns the remainder of the division.
+  <p>Example: `let remainder = 5 % 3; // 2`</p>
+  </li>
+<li> `++` (Increment): Increases the value of a variable by 1.
+  <p> Example: `let count = 5; count++; // 6`</p>
+  </li>
+<li>`--` (Decrement): Decreases the value of a variable by 1.
+  <p> Example: `let count = 5; count--; // 4`</p>
+  </li>
+  </div>
+  <div class="type">
+
+<h2>2. Assignment Operators</h2>
+<h4>These operators are used to assign values to variables.</h4>
+
+<li>
+    `=`: Assigns a value to a variable.
+    <p>Example: `let x = 10;`</p>
+</li>
+<li>
+     `+=`: Adds the right operand to the left operand and assigns the result to the left operand.
+    <p> Example: `x += 5; // x = x + 5;`</p>
+</li>
+<li>
+     `-=`: Subtracts the right operand from the left operand and assigns the result to the left operand.
+    <p>Example: `x -= 3; // x = x - 3;`</p>
+</li>
+<li>
+     `*=`: Multiplies the left operand by the right operand and assigns the result to the left operand.
+    <p> Example: `x *= 2; // x = x * 2;`</p>
+</li>
+<li>
+     `/=`: Divides the left operand by the right operand and assigns the result to the left operand.
+    <p> Example: `x /= 2; // x = x / 2;`</p>
+</li>
+<li>
+     `%=`: Calculates the modulus of the left operand and the right operand and assigns the result to the left operand.
+    <p>Example: `x %= 3; // x = x % 3;`</p>
+</li>
+
+</div>
+<div class="type">
+<h2>3. Comparison Operators</h2>
+<h4>These operators are used to compare two values.</h4>
+<li>
+     `==` (Equality): Checks if two values are equal (does not consider the type).
+    <p> Example: `5 == '5'; // true`</p>
+</li>
+<li>
+     `===` (Strict Equality): Checks if two values are equal and of the same type.
+    <p> Example: `5 === '5'; // false`</p>
+</li>
+<li>
+     `!=` (Inequality): Checks if two values are not equal (does not consider the type).
+    <p> Example: `5 != '5'; // false`</p>
+</li>
+<li>
+    `!==` (Strict Inequality): Checks if two values are not equal or not of the same type.
+    <p> Example: `5 !== '5'; // true`</p>
+</li>
+<li>
+     `>` (Greater Than): Checks if the left operand is greater than the right operand.
+    <p> Example: `5 > 3; // true`</p>
+</li>
+<li>
+    `<` (Less Than): Checks if the left operand is less than the right operand.
+    <p> Example: `5 < 3; // false`</p>
+</li>
+<li>
+     `>=` (Greater Than or Equal To): Checks if the left operand is greater than or equal to the right operand.
+    <p> Example: `5 >= 3; // true`</p>
+</li>
+<li>
+`<=` (Less Than or Equal To): Checks if the left operand is less than or equal to the right operand.
+  <p> Example: `5 <= 3; // false`</p>
+</li>
+</div>
+<div class="type">
+<h2>4. Logical Operators</h2>
+<h4>These operators are used to perform logical operations, mainly in control flow statements.</h4>
+<li>
+    `&&` (Logical AND): Returns `true` if both operands are `true`.
+    <p> Example: `true && false; // false`</p>
+</li> 
+<li>
+    `||` (Logical OR): Returns `true` if at least one operand is `true`.
+    <p>Example: `true || false; // true`</p>
+</li> 
+<li>
+     `!` (Logical NOT): Reverses the boolean value.
+<p> Example: `!true; // false`</p>
+</li>
+
+</div>
+<div class="type">
+<h2>5. Conditional (Ternary) Operator</h2>
+<h4>A shorthand for `if-else` statements.</h4>
+<li>
+     `condition ? value_if_true : value_if_false`
+    <p>Example: 
+      let age = 18;
+      let result = age >= 18 ? "Adult" : "Minor";
+      console.log(result); // "Adult"</p>
+</li>
+
+</div>
+  </div>
+
+    <script>
+
+
+        //ARITHMETIC:- = - * / ** ++ -- %
+
+        let a1 = 5;
+        let a2 = 7;
+        A = a1 + a2;
+        console.log(A);
+        let b1 = 10;
+        let b2 = 3;
+        B = b1 - b2;
+        console.log(B);
+        let c1 = 4;
+        let c2 = 6;
+        C = c1 * c2;
+        console.log(C);
+        let d1 = 15;
+        let d2 = 3;
+        D = d1 / d2;
+        console.log(D);
+        let y1 = 20;
+        let y2 = 3;
+        console.log(y1 % y2);
+
+        //increment
+        let str = 30;
+        console.log(str++);
+        console.log(str);
+        console.log(++str);
+        console.log(str);
+
+        //Pre - INCREMENT (CHANGE,USE)
+
+        let a_1 = 6;
+        console.log(++a_1);
+        console.log(a_1);
+
+        let Age = 10;
+        let Newage = ++Age;
+        console.log(Age);
+        console.log(Newage);
+
+        //Post - INCREMENT (USE, CHANGE)
+        let age = 10;
+        let newAge = age++;
+        console.log(age);
+        console.log(newAge);
+
+        let b_1 = 6;
+        console.log(b_1++);
+        console.log(b_1);
+
+        //Decrement
+
+        //Post - DECREMENT (USE, CHANGE)
+
+        //Pre - DECREMENT (USE, CHANGE)
+
+
+        //ASSIGNMENT:- = += -= *= /= 
+        let a = 5;
+        let c = a+10;
+        console.log(c);
+        let d = a-1;
+        console.log(d);
+        let e = a*7;
+        console.log(e);
+
+     
+        
+
+        //COMPARISON:- == === !== != < > <= >= 
+        
+        let age1 = 25;
+        console.log(age1 <18);
+        console.log(age1 >18);
+
+        let num1 = 50;
+        let num2 = '50';
+        console.log(num1 == num2);
+        console.log(num1 === num2);
+
+        let n = 20;
+        let m = 10;
+        console.log(n != m);
+
+        //LOGICAL:- && || ! 
+        
+        let x = 50;
+        let y = 50;
+        console.log(x == y && x=== y);
+        console.log(x == y || x=== y);
+        console.log(!(x == y || x=== y));
+
+
+        let num = 20;
+        let num_1 = '20';
+        console.log(num == num_1 && num === num_1);
+        console.log(num == num_1 || num === num_1);
+       
+
+
+    
+      
+
+
+
+    </script>
+</body>
+
+</html>
